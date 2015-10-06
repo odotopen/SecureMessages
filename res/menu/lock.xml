@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+      <item android:title="@string/text_secure_normal__menu_clear_passphrase"
+          android:id="@+id/menu_lock"
+          android:icon="?attr/menu_lock_icon"
+          app:showAsAction="ifRoom|collapseActionView"
+          />
+
+
+</menu>

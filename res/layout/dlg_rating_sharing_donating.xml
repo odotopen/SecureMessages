@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    >
+    <TextView
+        android:id="@+id/popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_main_screen_title"
+        android:textColor="@color/gray78"
+        android:layout_gravity="left"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:textSize="21dp"/>
+
+    <TextView
+        android:id="@+id/popup_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_main_screen_desc"
+        android:textColor="@color/gray70"
+        android:layout_gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textSize="17dp"/>
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#71C671"
+        android:text="@string/popup_main_screen_rate"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+    />
+    <!--<Button
+        android:id="@+id/btn_remove_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#388E8E"
+        android:layout_below="@+id/btn_rate"
+        android:text="@string/popup_main_screen_remove_ads"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        />-->
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#3333FF"
+        android:layout_below="@+id/btn_remove_ads"
+        android:text="@string/popup_main_screen_share"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_share"
+        android:textColor="@color/white"
+        android:background="@color/textsecure_primary"
+        android:text="@string/popup_main_screen_close"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
+
