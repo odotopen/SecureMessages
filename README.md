@@ -1,80 +1,56 @@
-# TextSecure [![Build Status](https://travis-ci.org/WhisperSystems/TextSecure.svg?branch=master)](https://travis-ci.org/WhisperSystems/TextSecure)
+# SecureMessages [![Build Status](https://travis-ci.org/odotopen/SecureMessages.svg?branch=master)](https://travis-ci.org/odotopen/SecureMessages)
 
-TextSecure is a messaging app for simple private communication with friends.
+[SecureMessages](https://odotopen.org) is an SMS/MMS application that allows you to protect your privacy while communicating with friends.
 
-TextSecure uses your phone's data connection (WiFi/3G/4G) to communicate securely, optionally supports plain SMS/MMS to function as a unified messenger, and can also encrypt the stored messages on your phone.
+Using SecureMessages, you can send SMS messages and share media or attachments with complete privacy.
 
-Currently available on the Play store.
+Features:
+* Easy. SecureMessages works like any other SMS application. There's nothing to sign up for and no new service your friends need to join.
+* Reliable. SecureMessages communicates using encrypted SMS messages. No servers or internet connection required.
+* Private. SecureMessages uses the TextSecure encryption protocol to provide privacy for every message, every time.
+* Safe. All messages are encrypted locally, so if your phone is lost or stolen, your messages are protected.
+* Open Source. SecureMessages is Free and Open Source, enabling anyone to verify its security by auditing the code.
 
-*[![Play Store Badge](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms)*
 
-## Contributing Bug reports
-We use GitHub for bug tracking. Please search the existing issues for your bug and create a new one if the issue is not yet tracked!
+## Project goals
 
-https://github.com/WhisperSystems/TextSecure/issues
+This is a fork of [TextSecure](https://github.com/WhisperSystems/TextSecure) that aims to keep the SMS encryption that TextSecure removed [for a variety of reasons](https://whispersystems.org/blog/goodbye-encrypted-sms/).
 
-## Joining the Beta
-Want to live life on the bleeding edge and help out with testing?
+SecureMessages focuses on SMS and MMS. This fork aims to:
 
-You can subscribe to TextSecure Beta releases here:
-https://play.google.com/apps/testing/org.thoughtcrime.securesms
- 
-If you're interested in a life of peace and tranquility, stick with the standard releases.
+* Keep SMS/MMS encryption
+* Drop Google services dependencies (push messages are not available in SecureMessages)
+* Integrate upstream bugfixes and patches from TextSecure
 
-## Contributing Translations
-Interested in helping to translate TextSecure? Contribute here:
+## Migrating from TextSecure to SecureMessages
 
-https://www.transifex.com/projects/p/textsecure-official/
+* In TextSecure, export a plaintext backup. Warning: the backup will **not** be encrypted.
+* Install SecureMessages.
+* In SecureMessages, import the plaintext backup (this will import the TextSecure backup if no SecureMessages backup is found).
+* If TextSecure v2.6.4 or earlier is installed, update or uninstall it so it doesn't conflict (can cause errors with key exchanges).
+* Enjoy SecureMessages!
 
-## Contributing Code
-Instructions on how to setup your development environment and build TextSecure can be found in  [BUILDING.md](https://github.com/WhisperSystems/TextSecure/blob/master/BUILDING.md).
+Note: You will have to start new secured sessions with your contacts.
 
-If you're new to the TextSecure codebase, we recommend going through our issues and picking out a simple bug to fix (check the "easy" label in our issues) in order to get yourself familiar.
+# Contributing
 
-For larger changes and feature ideas, we ask that you propose it on the mailing list for a high-level discussion before implementation.
+See [CONTRIBUTING.md](https://github.com/odotopen/SecureMessages/blob/master/CONTRIBUTING.md) for how to contribute code, translations, or bug reports.
 
-This repository is set up with [BitHub](https://whispersystems.org/blog/bithub/), so you can make money for committing to TextSecure. The current BitHub price for an accepted pull request is:
+Instructions on how to setup a development environment and build SecureMessages can be found in [BUILDING.md](https://github.com/odotopen/SecureMessages/blob/master/BUILDING.md).
 
-[![Current BitHub Price](https://bithub.herokuapp.com/v1/status/payment/commit/)](https://whispersystems.org/blog/bithub/)
-
-## Contributing Ideas
-Have something you want to say about Open Whisper Systems projects or want to be part of the conversation? Get involved in the mailing list!
-
-whispersystems@lists.riseup.net
-
-https://lists.riseup.net/www/info/whispersystems
-
-## Contributing Funds
-[![Donate](https://www.coinbase.com/assets/buttons/donation_large-5e1b50d6490970e32b80023f3070b1d77afc621b9e64ac996596a67a4671967b.png)](https://www.coinbase.com/checkouts/51dac699e660a4d773216b5ad94d6a0b)
-
-You can add funds to BitHub to directly help further development efforts.
-
-Help
-====
-## Support
-For troubleshooting and questions, please visit our support center!
-
-http://support.whispersystems.org/
-
+# Help
 ## Documentation
-Looking for documentation? Check out the wiki!
+Looking for documentation? Check out the wiki of the original project:
 
 https://github.com/WhisperSystems/TextSecure/wiki
 
-# Legal things
+# Legal
 ## Cryptography Notice
 
 This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
 BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
 See <http://www.wassenaar.org/> for more information.
 
-The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms.
-The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.
-
 ## License
-
-Copyright 2011 Whisper Systems
-
-Copyright 2013-2014 Open Whisper Systems
 
 Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
