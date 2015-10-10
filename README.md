@@ -1,4 +1,8 @@
-# SecureMessages [![Build Status](https://travis-ci.org/odotopen/SecureMessages.svg?branch=master)](https://travis-ci.org/odotopen/SecureMessages)
+# SecureMessages 
+
+Currently available on the Play store.
+
+*[![Play Store Badge](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.tingtingapps.securesms)*
 
 [SecureMessages](https://odotopen.org) is an SMS/MMS application that allows you to protect your privacy while communicating with friends.
 
